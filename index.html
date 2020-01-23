@@ -36,6 +36,23 @@
     console.log(mammals4);
 
     const mammals5 = Array.from(animals);
+
+    const character = {
+      name: 'Alice',
+      book: 'Through the Looking glass',
+      movie: 'Alice in Wonderland'
+    }
+    console.log(character);
+
+    const alice = character;
+    alice.color = 'blue';
+    console.log(alice);
+
+    const alice2 = Object.assign({}, character, {color: 'blue', movie: 'Alices Adventures in Wonderland'});
+    console.log(alice2);
+
+    const alice3 = {...character};
+    console.log(alice3);
   </script>
 </body>
 </html>
