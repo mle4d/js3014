@@ -25,8 +25,17 @@
 
     console.log(animals, mammals);
     
-   mammals[3] = 'doedicurus';
+    mammals[3] = 'doedicurus';
+    const mammals2 = animals.slice();
 
+    const mammals3 = [].concat(animals);
+
+
+    const mammals4 = [...animals];
+    mammals4[3] = 'diprotodont';
+    console.log(mammals4);
+
+    const mammals5 = Array.from(animals);
   </script>
 </body>
 </html>
