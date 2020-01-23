@@ -2,8 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>JS Reference VS Copy</title>
 </head>
 <body>
+  <script>
+    let dog = 'woof';
+    let dog2 = 'bark';
+    console.log(dog, dog2);
+    dog = 'bark';
+    console.log(dog, dog2)
+  </script>
 </body>
 </html>
